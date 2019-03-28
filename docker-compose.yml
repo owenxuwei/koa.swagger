@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  kaoqin:                                         ##容器服务名
+    container_name: kaoqin                        ##容器名
+    build: ./                ##Dockerfile路径
+    image: kaoqin:1.0.1                          ##镜像名
+    ##ports:
+    ##  - "6001:8000"    
+    ##volumes:
+    ##  - "/Users/apollo/logs/100003171:/opt/logs/100003171"    ##将/opt/logs/100003171目录挂载到宿主机的/Users/mobin/opt/logs/100003171方便在宿主机上查看日志
+    ##environment:
+    ##  - spring_datasource_url=jdbc:mysql://localhost:3306/ApolloConfigDB?characterEncoding=utf8
+    ##  - spring_datasource_username=root
+    ##  - spring_datasource_password=123456
+    ##network_mode : "host"
